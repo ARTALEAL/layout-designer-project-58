@@ -1,0 +1,27 @@
+@import url(../fonts/openSans.css);
+@import url(../fonts/neucha.css);
+
+:root {
+  --white: #fff;
+  --white-opacity: #d7ccc0;
+  --light: #f5f4f0;
+  --primary: #fe8a02;
+  --primary-dark: #42413c;
+  --dark: #2a2626;
+  --dark-opacity: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+  --font-size: 16px;
+  --font-line-height: 1.6em;
+  --font-color: #2a2626;
+  --header-height: 1.2em;
+  --h1-size: 72px;
+  --h2-size: 60px;
+  --h3-size: 34px;
+}
+
+section {
+  max-width: 1110px;
+  margin: auto;
+  padding: 100px 100px;
+}
