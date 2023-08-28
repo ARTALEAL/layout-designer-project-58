@@ -57,7 +57,7 @@ section {
   margin: 0;
   font-family: 'Neucha';
   color: var(--dark);
-  font-size: var(--h1-size);
+  font-size: var(--h2-size);
   font-weight: var(--w-400);
   line-height: var(--header-height);
 }
@@ -400,7 +400,15 @@ header {
   margin: auto;
   background-color: var(--dark);
   gap: 122px;
-  padding: 55px;
+  padding-top: 39px;
+  padding-bottom: 46px;
+  width: 100%;
+}
+
+.footer__question-container {
+  text-align: left;
+  padding-top: 16px;
+  padding-left: 56px;
 }
 
 .footer__question {
@@ -415,6 +423,8 @@ header {
 .footer__input-container {
   display: flex;
   flex-direction: column;
+  text-align: left;
+  padding-left: 23px;
 }
 
 .footer__email {
@@ -428,8 +438,8 @@ header {
 }
 
 .footer__input {
-  width: 423px;
-  height: 50px;
+  width: 417px;
+  height: 46px;
   flex-shrink: 0;
   border: 1px solid #e3e3e3;
   background-color: var(--white);
@@ -447,8 +457,8 @@ header {
 
 .footer__button {
   display: inline-block;
-  width: 70px;
-  height: 54px;
+  width: 62px;
+  height: 50px;
   background-color: var(--primary);
   border: none;
   position: relative;
@@ -467,6 +477,7 @@ header {
 
 .input-container {
   display: flex;
+  margin-top: 8px;
 }
 
 .footer__about {
