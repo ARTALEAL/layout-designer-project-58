@@ -231,7 +231,7 @@ header {
   background-color: #ea7600;
 }
 
-next .h2-title {
+.h2-title {
   color: var(--dark);
   font-family: 'Neucha';
   font-size: var(--h2-size);
