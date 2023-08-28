@@ -30,6 +30,64 @@ section {
   padding: 100px 165px;
 }
 
+.section-span {
+  font-family: 'Neucha';
+  font-size: 24px;
+  font-weight: var(--w-400);
+  line-height: 120%;
+  color: var(--dark-opacity);
+}
+
+.section-header {
+  margin: 0;
+  font-family: 'Neucha';
+  color: var(--dark);
+  font-size: var(--h1-size);
+  font-weight: var(--w-400);
+  line-height: var(--header-height);
+}
+
+.section-paragraph {
+  font-family: 'Neucha';
+  color: var(--dark);
+  font-size: var(--h3-size);
+  line-height: var(--header-height);
+  margin-top: 30px;
+}
+
+.section-subtitle {
+  font-family: 'openSans';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: var(--header-height);
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.section-subtitle_dark {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.section__subtitle-text-container_dark {
+  display: flex;
+  text-align: left;
+  gap: 30px;
+  font-family: 'openSans';
+  color: var(--dark);
+  font-size: var(--font-size);
+  font-weight: var(--w-400);
+  line-height: var(--font-line-height);
+}
+.section__subtitle-text-container_dark p {
+  width: 50%;
+  margin: 0;
+}
 /* header */
 
 header {
@@ -256,4 +314,20 @@ next .h2-title {
 
 .navigation__list__item:hover > .navigation__list__item-paragraph {
   color: var(--light);
+}
+
+/* ikea-effect */
+#ikea-effect {
+  background-color: var(--light);
+}
+.ikea-effect__title-container {
+  display: flex;
+  text-align: left;
+  gap: 30px;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+  vertical-align: middle;
 }
