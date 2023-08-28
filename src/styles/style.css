@@ -1,0 +1,399 @@
+:root {
+  --white: #fff;
+  --white-semitransparent: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --dark-semitransparent: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Neucha;
+  src: url("../fonts/Neucha-Regular.ttf");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  margin: 0 auto;
+  color: #2a2626;
+  font: 16px/1.6em "Open Sans", sans-serif;
+}
+
+main {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+.text-orange {
+  color: var(--main);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Neucha, sans-serif;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  position: relative;
+  box-sizing: content-box;
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  background-color: var(--light);
+}
+
+header section {
+  position: relative;
+}
+
+.background-image {
+  position: relative;
+}
+
+.background-image::before {
+  position: absolute;
+  z-index: auto;
+  width: 1440px;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  background-image: url("../assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  overflow-y: hidden;
+  content: "";
+}
+
+header img {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+  z-index: auto;
+  height: 525px;
+}
+
+.header-title {
+  position: relative;
+  margin: 0;
+  z-index: 1;
+}
+
+.column-text {
+  display: flex;
+  gap: 30px;
+}
+
+header .column-text {
+  margin-top: 201px;
+}
+
+header .column-text div,
+.column-text p {
+  z-index: 1;
+  flex: 1 0 540px;
+  margin: 0;
+}
+
+header a {
+  display: inline-block;
+  margin-top: 24px;
+  margin-left: auto;
+  padding: 12px 24px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--main);
+}
+
+.video-block {
+  position: relative;
+  top: 100px;
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.video-block h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.video-block p {
+  margin: 30px;
+}
+
+.video-block iframe {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.navigation {
+  position: relative;
+  z-index: auto;
+  width: 100%;
+  padding-top: 100px;
+  background-color: var(--main-dark);
+}
+
+.footer-container > * {
+  flex: 1 1 50%;
+  margin: 55px;
+}
+
+.navigation .row,
+.navigation .row2 {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.navigation .row {
+  height: 323px;
+}
+
+.navigation .row2 {
+  margin: 0;
+  height: 348px;
+  flex: 0 0 350px;
+}
+
+.effect-header > * {
+  flex: 0 0 502px;
+}
+
+.navigation .row > *,
+.navigation .row2 > * {
+  flex: 1 0 350px;
+}
+
+.navigation-title {
+  padding: 0;
+  background-color: var(--main-dark);
+}
+
+.navigation-card,
+.navigation-card:active {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 24px;
+  color: var(--dark);
+  text-decoration: none;
+  background-color: var(--light);
+}
+
+.navigation-card:hover,
+.navigation-card:hover > * {
+  color: var(--white);
+  background-color: var(--main);
+}
+
+.navigation h2 {
+  font-size: 52px;
+}
+
+.navigation-card h3 {
+  margin: 0;
+}
+
+.navigation-card p {
+  margin-bottom: 0;
+}
+
+.number {
+  padding-bottom: 40px;
+  font: 64px/1 Neucha, sans-serif;
+  font-size: 64px;
+}
+
+.footer-container h3 {
+  font-weight: 400;
+  vertical-align: middle;
+}
+
+.effect-title span {
+  font-size: 24px;
+}
+
+.footer-container form span {
+  font-size: 12px;
+}
+
+.effect-light {
+  background-color: var(--light);
+}
+
+.effect-header {
+  display: flex;
+  gap: 30px;
+}
+
+.effect-header img {
+  position: relative;
+  vertical-align: middle;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.effect-title {
+  font-family: Neucha, sans-serif;
+}
+
+.effect-title h2 {
+  font-weight: 400;
+}
+
+.effect-title p {
+  margin-top: 30px;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.effect-body h3 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font: 700 14px "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.effect-light .effect-header span {
+  color: var(--dark-semitransparent);
+}
+
+.effect-light .effect-body h3 {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.effect-brown {
+  color: var(--white);
+  background-color: var(--brown);
+}
+
+.effect-brown .effect-body h3 {
+  color: var(--brown);
+  background-color: var(--white);
+}
+
+.effect-brown .effect-header span {
+  color: var(--white-semitransparent);
+}
+
+.footer-container {
+  display: flex;
+  height: 190px;
+  justify-content: space-between;
+  color: var(--white);
+  background-color: var(--main-dark);
+}
+
+.footer-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-input {
+  display: flex;
+}
+
+.footer-container form label {
+  padding-bottom: 9px;
+  font-size: 18px;
+}
+
+.footer-container form input {
+  box-sizing: border-box;
+  width: 420px;
+  height: 50px;
+  padding: 15px;
+  border: 0;
+}
+
+.footer-container form button {
+  position: relative;
+  width: 70px;
+  height: 50px;
+  background-color: var(--main);
+  border: 0;
+}
+
+.footer-container form button::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  right: 25px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../assets/send.svg");
+}
+
+.footer-container form a {
+  color: var(--light);
+}
+
+.contact-info {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.hello {
+  display: block;
+
+  color: #fff;
+}
