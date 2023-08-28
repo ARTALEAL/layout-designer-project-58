@@ -370,3 +370,15 @@ next .h2-title {
 #premature-optimization {
   background-color: var(--brown);
 }
+
+#distortion-of-novelty {
+  background-color: var(--light);
+}
+
+#hyperbolic-depreciation {
+  background-color: var(--brown);
+}
+
+#errors-in-planning {
+  background-color: var(--light);
+}
